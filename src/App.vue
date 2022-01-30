@@ -4,7 +4,7 @@ import Hello from './components/HelloWorld.vue';
 
 <template>
   <h1>Vue 3 入門</h1>
-  <Hello :price="1000" />
+  <Hello :isAdmin="false" />
 </template>
 
 <style>
