@@ -4,8 +4,7 @@ import Hello from './components/HelloWorld.vue';
 
 <template>
   <h1>Vue 3 入門</h1>
-  <Hello message="Propsの使い方" name="マンボウ" />
-  <Hello message="defineProps関数を利用" />
+  <Hello :price="1000" />
 </template>
 
 <style>
