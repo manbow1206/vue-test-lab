@@ -1,12 +1,18 @@
-import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld.vue";
+import { shallowMount } from '@vue/test-utils';
+import App from '@/components/App.vue';
 
-describe("HelloWorld.vue", () => {
-  it("renders props.msg when passed", () => {
-    const msg = "new message";
-    const wrapper = shallowMount(HelloWorld, {
-      props: { msg },
-    });
-    expect(wrapper.text()).toMatch(msg);
+test('何もレンダリングされないケース', () => {
+  const wrapper = shallowMount(App);
+
+  expect(wrapper.element).toMatchSnapshot();
+});
+
+it('文字列を渡すケース', () => {
+  const wrapper = shallowMount(App, {
+    propsData: {
+      message: 'Vue Test Utils',
+    },
   });
+
+  expect(wrapper.element).toMatchSnapshot();
 });

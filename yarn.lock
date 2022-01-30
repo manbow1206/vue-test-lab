@@ -1783,9 +1783,9 @@
   resolved "https://registry.npmmirror.com/@vue/shared/download/@vue/shared-3.2.28.tgz#5b0b1840432031d0ea1adff633b356a503e87048"
   integrity sha512-eMQ8s9j8FpbGHlgUAaj/coaG3Q8YtMsoWL/RIHTsE3Ex7PUTyr7V91vB5HqWB5Sn8m4RXTHGO22/skoTUYvp0A==
 
-"@vue/test-utils@^2.0.0-0":
+"@vue/test-utils@^2.0.0-rc.18":
   version "2.0.0-rc.18"
-  resolved "https://registry.npmmirror.com/@vue/test-utils/download/@vue/test-utils-2.0.0-rc.18.tgz#ff22b252424fe72e5462cbb3a8e7405cef11ffb6"
+  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-2.0.0-rc.18.tgz#ff22b252424fe72e5462cbb3a8e7405cef11ffb6"
   integrity sha512-aifolXjVdsogjaLmDoZ0FU8vN+R67aWmg9OuVeED4w5Ij5GFQLrlhM19uhWe/r5xXUL4fXMk3pX5wW6FJP1NcQ==
 
 "@vue/web-component-wrapper@^1.2.0":
@@ -10005,10 +10005,10 @@ vue-jest@^3.0.5:
     tsconfig "^7.0.0"
     vue-template-es2015-compiler "^1.6.0"
 
-vue-jest@^5.0.0-0:
+vue-jest@^5.0.0-alpha.10:
   version "5.0.0-alpha.10"
-  resolved "https://registry.npmmirror.com/vue-jest/download/vue-jest-5.0.0-alpha.10.tgz#4326977b3b0268b1def140f3b69113c2d82fb090"
-  integrity sha1-QyaXezsCaLHe8UDztpETwtgvsJA=
+  resolved "https://registry.yarnpkg.com/vue-jest/-/vue-jest-5.0.0-alpha.10.tgz#4326977b3b0268b1def140f3b69113c2d82fb090"
+  integrity sha512-iN62cTi4AL0UsgxEyVeJtHG6qXEv+8Ci2wX1vP3b/dAZvyBRmqy5aJHQrP6VCEuio+HgHQ1LAZ+ccM2pouBmlg==
   dependencies:
     "@babel/plugin-transform-modules-commonjs" "^7.2.0"
     chalk "^2.1.0"
