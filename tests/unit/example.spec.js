@@ -13,3 +13,18 @@ describe('double関数', () => {
   });
 });
 
+// toBe()
+const obj = {
+  name: 'Jest Sample',
+  num: 12,
+};
+
+describe('toBeのサンプル', () => {
+  it('objのnumプロパティの値が12', () => {
+    expect(obj.num).toBe(12);
+  });
+
+  it('objのnameプロパティの値がJest Sample', () => {
+    expect(obj.name).toBe('Jest Sample');
+  });
+});
