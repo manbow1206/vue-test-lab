@@ -1,13 +1,20 @@
 <script setup>
-import { defineProps } from 'vue';
-
+import { defineProps, defineEmits, ref } from 'vue';
 const props = defineProps({
-  isAdmin: Boolean,
+  name: String,
 });
+
+const name = ref(props.name);
+
+const emit = defineEmits(['changeNameEvent']);
+
+const changeName = () => {
+  emit('changeNameEvent', name.value);
+};
 </script>
 
 <template>
-  <h2>初めてのコンポーネント</h2>
-  <p v-if="props.isAdmin">管理者です。</p>
-  <p v-else>管理者ではありません。</p>
+  <h2>子コンポーネント</h2>
+  <p>Hello {{ props.name }}</p>
+  <input type="text" v-model="name" @input="changeName" />
 </template>

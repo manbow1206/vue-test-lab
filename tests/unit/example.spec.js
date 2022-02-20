@@ -1,18 +1,15 @@
-import { shallowMount } from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import App from '@/components/App.vue';
 
-test('何もレンダリングされないケース', () => {
-  const wrapper = shallowMount(App);
-
-  expect(wrapper.element).toMatchSnapshot();
-});
-
-it('文字列を渡すケース', () => {
-  const wrapper = shallowMount(App, {
-    propsData: {
-      message: 'Vue Test Utils',
-    },
+describe('App', () => {
+  it('computed property upper case', () => {
+    const wrapper = mount(App);
+    expect(wrapper.text()).toBe('JOHN');
   });
 
-  expect(wrapper.element).toMatchSnapshot();
+  it.only('test App Component', () => {
+    const wrapper = mount(App);
+    const admin = wrapper.find('#admin');
+    expect(admin.exists()).toBe(false);
+  });
 });
