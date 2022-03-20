@@ -17,6 +17,7 @@ describe('double関数', () => {
 const obj = {
   name: 'Jest Sample',
   num: 12,
+  description: 'テスト',
 };
 
 describe('toBeのサンプル', () => {
@@ -26,6 +27,10 @@ describe('toBeのサンプル', () => {
 
   it('objのnameプロパティの値がJest Sample', () => {
     expect(obj.name).toBe('Jest Sample');
+  });
+
+  it('objのnameプロパティの値がJest Sample', () => {
+    expect(obj.description).toBe('テスト');
   });
 });
 
@@ -38,6 +43,10 @@ describe('toContaine', () => {
   });
   it("txtに'太郎'が含まれている", () => {
     expect(txt).toContain('太郎');
+  });
+
+  it("txtに'太郎'が含まれている", () => {
+    expect(txt).toBe('山田太郎');
   });
 });
 
